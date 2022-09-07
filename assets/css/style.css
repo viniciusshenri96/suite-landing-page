@@ -99,6 +99,7 @@ body {
   margin: 0 auto;
   height: 600px;
   position: relative;
+  margin-bottom: 96px;
 }
 
 .hero::after {
@@ -184,4 +185,69 @@ body {
   letter-spacing: 2.5px;
   color: var(--color-grey);
   text-transform: uppercase;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  margin-bottom: 95px;
+  display: grid;
+  gap: 152px;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1110px;
+  height: 545px;
+  border-radius: 15px;
+  background: url(../img/pattern-blur.svg) no-repeat left 35px bottom -118px,
+    var(--color-darkBlue);
+  color: var();
+  padding: 0;
+  position: relative;
+}
+
+.testimonial__img {
+  margin-top: -45px;
+  padding-left: 121px;
+}
+
+.testimonial::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 52px;
+  background: url(../img/pattern-curved-line-2.svg) no-repeat;
+  position: absolute;
+  top: 161px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.testimonial__content {
+  padding-top: 88px;
+  padding-right: 125px;
+}
+
+.testimonial__title {
+  font: var(--fw-regular) var(--font-l) / var(--lh-l) "Epilogue";
+  color: var(--color-creamWhite);
+  margin-bottom: 40px;
+}
+
+.testimonial__text {
+  font: var(--fw-regular) var(--font-quote) / var(--lh-quote) "Epilogue";
+  color: var(--color-cream);
+  letter-spacing: 0.1px;
+  margin-bottom: 40px;
+}
+
+.testimonial__author {
+  font: var(--fw-bold) var(--font-m) / var(--lh-m) "Epilogue";
+  letter-spacing: -0.18px;
+  text-transform: uppercase;
+  color: var(--color-creamWhite);
+}
+
+.testimonial__business {
+  font: var(--fw-regular) var(--font-s) / var(--lh-s) "Epilogue";
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--color-cream);
 }
