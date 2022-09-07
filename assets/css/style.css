@@ -251,3 +251,29 @@ body {
   text-transform: uppercase;
   color: var(--color-cream);
 }
+
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 72px;
+}
+
+.footer__copy {
+  font: 400 var(--font-footer) / var(--lh-footer) "Epilogue";
+  color: var(--color-grey);
+  letter-spacing: 0.0833333px;
+}
+
+.footer__redes {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.foooter__link:hover,
+.foooter__link:hover svg path {
+  fill: var(--color-darkBlue);
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+}
