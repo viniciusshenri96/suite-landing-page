@@ -54,6 +54,7 @@ a:link {
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -276,4 +277,132 @@ body {
   fill: var(--color-darkBlue);
   opacity: 0.5;
   transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 1160px) {
+  .hero {
+    margin: 0 auto;
+    height: 600px;
+    position: relative;
+    margin-bottom: 196px;
+  }
+
+  .hero::after {
+    top: -103px;
+    right: 227px;
+  }
+
+  .hero__title {
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  .testimonial__content {
+    padding-top: 60px;
+    padding-right: 60px;
+  }
+
+  .testimonial__img {
+    margin-top: -45px;
+    padding-left: 60px;
+  }
+
+  .testimonial__title {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.416667px;
+    margin-bottom: 20px;
+  }
+
+  .testimonial__text {
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.09px;
+    margin-bottom: 20px;
+  }
+
+  .testimonial::after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 52px;
+    background: url(../img/pattern-curved-line-2.svg) no-repeat;
+    position: absolute;
+    top: 161px;
+    left: 50%;
+    transform: translateX(-10%);
+  }
+}
+
+@media (max-width: 990px) {
+  .hero::after {
+    width: 281px;
+    height: 482px;
+    top: -103px;
+    right: 40px;
+    z-index: -1;
+  }
+  /* .hero::after {
+    content: "";
+    width: 350px;
+    height: 600px;
+    background: url(../img/image-hero-portrait.webp) no-repeat;
+    position: absolute;
+    top: -103px;
+    right: 327px;
+    z-index: -1;
+  } */
+
+  .hero__box {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 88px;
+    max-width: 1035px;
+  }
+
+  .hero__list {
+    display: flex;
+    text-align: center;
+    align-content: start;
+    gap: 63px;
+    justify-self: center;
+  }
+
+  .testimonial {
+    margin-bottom: 95px;
+    display: grid;
+    row-gap: 0px;
+    grid-template-columns: 1fr;
+    max-width: 889px;
+    height: 684px;
+    border-radius: 15px;
+    background: url(../img/pattern-blur.svg) no-repeat left 35px bottom -118px,
+      var(--color-darkBlue);
+    color: var();
+    padding: 0;
+    position: relative;
+    text-align: center;
+  }
+
+  .testimonial__content {
+    padding: 0 58px 64px 58px;
+  }
+
+  .testimonial__img {
+    margin-top: -165px;
+    margin-bottom: 56px;
+    padding-left: 0px;
+  }
+
+  .testimonial::after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 52px;
+    background: url(../img/pattern-curved-line-2.svg) no-repeat;
+    position: absolute;
+    top: 261px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
