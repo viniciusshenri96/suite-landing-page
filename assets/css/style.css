@@ -210,12 +210,6 @@ body {
   padding: 0;
   position: relative;
 }
-
-.testimonial__img {
-  padding-left: 121px;
-  margin-top: -45px;
-}
-
 .testimonial::after {
   content: "";
   display: block;
@@ -453,5 +447,204 @@ body {
 
   .testimonial__text {
     margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 680px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .header {
+    padding-top: 24px;
+    margin-bottom: 83px;
+  }
+
+  .btn--transparent:link,
+  .btn--transparent:visited {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.14px;
+    padding: 12px 16px 12px 17px;
+  }
+  .hero {
+    margin-bottom: 56px;
+  }
+  .hero__title {
+    font-size: 38px;
+    line-height: 44px;
+    letter-spacing: -0.527778px;
+    margin-bottom: 32px;
+  }
+
+  .hero__description {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.0888889px;
+    margin-bottom: 32px;
+  }
+
+  .hero__details::before {
+    content: "";
+    display: inline-block;
+    width: 151px;
+    height: 19px;
+    background: url(../img/pattern-curved-line-1.svg) no-repeat;
+    background-size: 151px 19px;
+    position: absolute;
+    top: -25px;
+  }
+
+  .hero__list {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .hero__box {
+    position: relative;
+    gap: 56px;
+    padding-top: 0;
+  }
+  .hero::after {
+    display: none;
+  }
+
+  .hero__box::after {
+    content: "";
+    display: block;
+    width: 343px;
+    height: 240px;
+    background: url(../img/image-hero-landscape.png) no-repeat;
+    background-size: 343px 240px;
+    position: relative;
+    /* top: 0;
+    right: 52px;
+    z-index: -1; */
+    grid-row: 2;
+    justify-self: start;
+  }
+
+  .testimonial {
+    height: 748px;
+    display: grid;
+    gap: 27px;
+    text-align: center;
+    grid-template-columns: 1fr;
+    border-radius: 15px;
+    background: none, var(--color-darkBlue) no-repeat bottom;
+    padding-left: 16px;
+    padding-right: 16px;
+    /* padding-bottom: 64px; */
+    align-self: end;
+  }
+
+  .testimonial-box {
+    width: 100%;
+    height: 929px;
+    display: flex;
+    align-items: start;
+    margin-bottom: 56px;
+  }
+
+  .testimonial-box.container {
+    padding: 0;
+  }
+
+  .testimonial__img {
+    margin-top: -176px;
+    padding-left: 0;
+    /* display: none; */
+  }
+
+  .testimonial::after {
+    content: "";
+    display: block;
+    width: 49px;
+    height: 40px;
+    background: url(../img/pattern-curved-line-2.svg) no-repeat;
+    background-size: 49px 40px;
+    position: absolute;
+    top: 251px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 80px;
+    gap: 33px;
+  }
+
+  .footer__redes {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .btn--transparent:link,
+  .btn--transparent:visited,
+  .btn--blue:link,
+  .btn--blue:visited {
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+    padding: 8px 8px;
+  }
+
+  .hero__box::after {
+    content: "";
+    display: block;
+    width: 240px;
+    height: 200px;
+    background: url(../img/image-hero-landscape.png) no-repeat;
+    background-size: 240px 200px;
+    position: relative;
+    /* top: 0;
+    right: 52px;
+    z-index: -1; */
+    grid-row: 2;
+    justify-self: start;
+  }
+
+  .hero__title {
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: -0.527778px;
+    margin-bottom: 24px;
+  }
+
+  .hero__description {
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.0888889px;
+    margin-bottom: 24px;
+  }
+
+  .hero__details::before {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 12px;
+    background: url(../img/pattern-curved-line-1.svg) no-repeat;
+    background-size: 100px 12px;
+    position: absolute;
+    top: -15px;
+  }
+
+  .hero__number {
+    font-size: 32px;
+    line-height: 1.5;
+  }
+
+  .hero__info {
+    font-size: 12px;
+    line-height: 1;
   }
 }
