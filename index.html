@@ -21,15 +21,16 @@
     <title>Suite landing page</title>
   </head>
   <body>
-    <header class="header container">
+    <!-- HEADER -->
+    <header class="header container flex">
       <a href="index.html">
-        <img " src="./assets/img/logo.svg" alt="logo written suite" />
+        <img src="./assets/img/logo.svg" alt="logo written suite" />
       </a>
       <a href="#" class="btn--transparent">Request Beta Access</a>
     </header>
 
     <section class="hero container">
-      <div class="hero__box">
+      <div class="hero__box grid">
         <div class="hero__content">
           <h1 class="hero__title">
             A <strong>super</strong>
@@ -42,7 +43,7 @@
           </p>
           <a href="#" class="btn--blue">Request Beta Access</a>
         </div>
-        <ul class="hero__list">
+        <ul class="hero__list grid">
           <li class="hero__item">
             <p class="hero__number">2K+</p>
             <p class="hero__info">Companies</p>
@@ -61,17 +62,17 @@
 
     <!-- TESTIMONIAL -->
     <section class="testimonial-bg">
-      <div class="container testimonial-box">
-        <div class="testimonial">
+      <div class="container testimonial-box grid">
+        <div class="testimonial grid">
           <picture>
             <source
-              media="(max-width: 1020px)"
+              media="(max-width: 63.75rem)"
               srcset="./assets/img/image-jeremy-small.webp"
-              sizes=""
             />
             <img
               class="testimonial__img"
               src="./assets/img/image-jeremy-large.webp"
+              aria-hidden="true"
               alt=""
             />
           </picture>
@@ -91,15 +92,16 @@
       </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="footer-bg">
-      <div class="footer container">
+      <div class="footer flex container">
         <a href="index.html">
           <img src="./assets/img/logo.svg" alt="company suite" />
         </a>
 
         <p class="footer__copy">Copyright - Suite</p>
 
-        <ul class="footer__redes">
+        <ul class="footer__redes flex">
           <li>
             <a class="foooter__link" href="#" aria-label="facebook">
               <svg width="20" height="20" aria-hidden="true">

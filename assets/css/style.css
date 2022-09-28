@@ -76,9 +76,16 @@ body {
   margin: 0 auto;
 }
 
+/* css reusable */
+.grid {
+  display: grid;
+}
+.flex {
+  display: flex;
+}
+
 /* HEADER */
 .header {
-  display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: calc(50rem / 16);
@@ -115,13 +122,12 @@ body {
   background: url(../img/image-hero-portrait.webp) no-repeat;
   position: absolute;
   top: 0;
-  right: 327px;
+  right: 20.438rem;
   z-index: -1;
 }
 
 .hero__box {
-  display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(2, auto);
   margin-bottom: 14.75rem;
   padding-top: 6.438rem;
 }
@@ -175,7 +181,6 @@ body {
 }
 
 .hero__list {
-  display: grid;
   gap: 3.938rem;
   justify-self: end;
   padding-right: 4.875rem;
@@ -199,14 +204,12 @@ body {
 }
 
 .testimonial-box {
-  height: 36.875rem;
-  display: grid;
   align-items: end;
+  height: 36.875rem;
 }
 
 .testimonial {
   height: 34.063rem;
-  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8.625rem;
   background: url(../img/pattern-blur.svg) no-repeat left 35px bottom -118px,
@@ -269,7 +272,6 @@ body {
 }
 
 .footer {
-  display: flex;
   justify-content: space-between;
   padding-top: 5.938rem;
   padding-bottom: 4.5rem;
@@ -282,7 +284,6 @@ body {
 }
 
 .footer__redes {
-  display: flex;
   align-items: center;
   gap: 1.75rem;
 }
@@ -322,15 +323,15 @@ body {
   }
 }
 
-@media (max-width: 64em) {
+@media (max-width: 63.75em) {
   .header {
     padding-top: 2.5rem;
     padding-bottom: 5rem;
   }
 
   .hero::after {
-    background-size: 281px 482px;
-    right: -30px;
+    background-size: 17.563rem 30.125rem;
+    right: -1.875rem;
   }
 
   .hero__title {
@@ -382,7 +383,7 @@ body {
     grid-template-columns: 1fr;
     background: url(../img/pattern-blur.svg) no-repeat top -160px center,
       var(--color-darkBlue);
-    background-size: 420px;
+    background-size: 26.25rem;
     padding: 0 3.625rem;
   }
 
@@ -396,7 +397,7 @@ body {
   }
 
   .testimonial__title {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
     position: relative;
   }
 
@@ -462,7 +463,7 @@ body {
   .hero__details::before {
     background-size: 9.438rem 1.188rem;
     position: absolute;
-    top: -25px;
+    top: -1.563rem;
   }
 
   .hero__list {
@@ -472,9 +473,9 @@ body {
 
   .hero__box {
     position: relative;
-    gap: 56px;
+    gap: 3.5rem;
     padding-top: 0;
-    margin-bottom: 56px;
+    margin-bottom: 3.5rem;
   }
 
   .hero::after {
@@ -493,7 +494,6 @@ body {
 
   .testimonial {
     height: 46.75rem;
-    display: grid;
     background: none, var(--color-darkBlue) no-repeat bottom;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -532,7 +532,6 @@ body {
 
 @media (max-width: 23em) {
   .header {
-    display: flex;
     flex-direction: column;
     gap: 1.5rem;
   }
@@ -558,7 +557,6 @@ body {
   .hero__box::after {
     max-width: 12.5rem;
     height: 11.25rem;
-    display: grid;
     background-size: 12.5rem 11.25rem;
     position: relative;
     justify-self: center;
