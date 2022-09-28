@@ -6,27 +6,27 @@
 </h1>
 
 <h4 align="center"> 
-	🚧 Suite landing page ✔️ Concluído 🚀 🚧
+	🚧 Suite landing page ✔️ Concluded 🚀 🚧
 </h4>
 
-## 💻 Sobre o projeto
+## 💻 About the project
 
-✔️ Suite landing page - É uma página de destino da empresa fictícia suite.
+✔️ Suite landing page - It is a fictitious company suite landing page.
 
-✔️ Este projeto é um desafio do site Frontend Mentor, onde pude praticar HTML, CSS e responsivo.
+✔️ This project is a challenge from the Frontend Mentor website, where I could practice HTML, CSS and responsive.
 
 <img alt="" title="" src="readme/nivel.svg"/>
 
 ---
 
-## ⚙️ Funcionalidades
+## ⚙️ Functionalities
 
-- [x] Layout se adapta a qualquer tipo de tela
-- [x] Estados de foco para elementos interativos(hover)
+- [x] Layout adapts to any type of screen
+- [x] Hover states for interactive(hover) elements
 
 ---
 
-## 🎨 Minha solução em diferentes telas:
+## 🎨 My solution on different screens:
 
 ### Mobile
 
@@ -45,14 +45,12 @@
 
 <p align="left">
   <img alt="Suite landing page" title="#Suitelandingpage" src="readme/tablet.png" width="200px" 
-  
 </p>
 
 ### Desktop
 
 <p align="left">
   <img alt="Suite landing page" title="#Suitelandingpage" src="readme/desktop.png" width="200px">
-
 </p>
 
 ---
@@ -61,13 +59,15 @@
 
 - [Netlify](https://suite-vinicius.netlify.app)
 
-## 🛠 Tecnologias
+## 🛠 Technologies
 
-As seguintes ferramentas e tecnologias foram usadas na construção do projeto:
+The following tools and technologies were used in the construction of the project:
 
 - **HTML**
 
 - **CSS**
+
+- **FIGMA**
 
 <!-- - **FLEXBOX** -->
 
@@ -165,7 +165,7 @@ As seguintes ferramentas e tecnologias foram usadas na construção do projeto:
 
 ---
 
-## 🦸 Autor
+## 🦸 Author
 
 <a href="https://www.frontendmentor.io/profile/viniciushenrique2015">
   <!-- <img style="border-radius: 50%;" src="./assets/img/avatar.jpg" width="100px;" alt=""/> -->
