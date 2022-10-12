@@ -125,13 +125,18 @@
     padding: 0 1rem;
   }
 
+  .header {
+    padding-top: 1.5rem;
+    padding-bottom: 3.5rem;
+  }
+
   .hero__box {
     grid-area: initial;
     justify-content: start;
   }
-  .header {
-    padding-top: 1.5rem;
-    padding-bottom: 3.5rem;
+
+  .hero__content {
+    text-align: center;
   }
 
   .hero {
@@ -149,6 +154,7 @@
   .hero__title,
   .hero__description {
     margin-bottom: 2rem;
+    max-width: 100%;
   }
 
   .hero__title {
@@ -192,7 +198,7 @@
     background: url(../img/image-hero-landscape.png) no-repeat;
     position: relative;
     grid-row: 2;
-    justify-self: start;
+    justify-self: center;
   }
 
   .testimonial {
@@ -230,6 +236,16 @@
 
   .footer__redes {
     justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero__content {
+    text-align: left;
+  }
+
+  .hero__box::after {
+    justify-self: start;
   }
 }
 
