@@ -239,7 +239,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 31.25em) {
   .hero__content {
     text-align: left;
   }
